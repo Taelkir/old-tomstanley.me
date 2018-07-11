@@ -2,7 +2,7 @@
 
 body {
   padding: 50px;
-  font: $font-stack;
+  font-family: $font-stack-body;
   background-color: dodgerblue;
 }
 
@@ -11,7 +11,10 @@ a {
 }
 
 header {
+  font-family: $font-stack-header;
+  letter-spacing: 10px;
   padding: 10px;
+  text-align: center;
   background-color: yellow;
 }
 
