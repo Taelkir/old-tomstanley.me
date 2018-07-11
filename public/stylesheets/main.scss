@@ -1,0 +1,24 @@
+@import "_sass-variables";
+
+body {
+  padding: 50px;
+  font: $font-stack;
+  background-color: dodgerblue;
+}
+
+a {
+  color: #00B7FF;
+}
+
+header {
+  padding: 10px;
+  background-color: yellow;
+}
+
+footer {
+  background-color: lightgrey;
+  padding: 10px;
+  a {
+    color: darkblue;
+  }
+}
