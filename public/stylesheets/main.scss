@@ -1,33 +1,7 @@
+@import "./vendor/_normalize";
 
 @import "_sass-variables";
-@import "_images";
-@import "_layouts";
-
-@import "_normalize";
-
-body {
-  margin: 0;
-  font-family: $font-stack-body;
-  background-color: dodgerblue;
-}
-
-a {
-  color: #00B7FF;
-}
-
-header {
-  font-family: $font-stack-header;
-  letter-spacing: 10px;
-  padding: 10px;
-  text-align: center;
-  background-color: yellow;
-  width: 100%;
-}
-
-footer {
-  background-color: lightgrey;
-  padding: 10px;
-  a {
-    color: darkblue;
-  }
-}
+@import "_header";
+@import "_footer";
+@import "_body-sections";
+@import "_typography";

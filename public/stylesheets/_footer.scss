@@ -1,0 +1,15 @@
+footer {
+  flex-shrink: 0;
+  margin-bottom: 0px;
+  background-color: hotpink;
+  padding: 10px 0px;
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: darkblue;
+  }
+}

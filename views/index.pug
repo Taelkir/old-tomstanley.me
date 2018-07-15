@@ -1,6 +1,19 @@
 extends layout
 
 block content
-  main.container
-    p.flex-item Welcome. I'm building this on Express to show off my web development skills. As you can probably see, I am not a colour theorist.
-    img(src="./images/carbon.png" class="hero-image flex-item")
+  main.flex-container
+    section.intro.flex-container
+      h2 Greetings
+      p.flex-item Welcome. I'm building this on Express to show off my web development skills. As you can probably see, I am not a colour theorist.
+    section.development.flex-container
+      h2 Development
+      p.flex-item Welcome. I'm building this on Express to show off my web development skills. As you can probably see, I am not a colour theorist.
+      img.hero-image.flex-item(src="./images/carbon.png")
+    section.writing.flex-container
+      h2 Writing
+      p.flex-item Welcome. I'm building this on Express to show off my web development skills. As you can probably see, I am not a colour theorist.
+      img.hero-image.flex-item(src="./images/carbon.png")
+    section.contact.flex-container
+      h2 Contact me
+      p.flex-item Welcome. I'm building this on Express to show off my web development skills. As you can probably see, I am not a colour theorist.
+      img.hero-image.flex-item(src="./images/carbon.png")

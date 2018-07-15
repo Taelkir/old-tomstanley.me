@@ -1,0 +1,45 @@
+@import "_sass-variables";
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+section {
+}
+
+body {
+  background-color: $body-background-colour;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+section {
+  width: 90%;
+  text-align: center;
+}
+
+section.intro {
+  background-color: blanchedalmond;
+}
+
+// Images
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.svg-icon {
+  max-width: 30px;
+  max-height: 30px;
+}
