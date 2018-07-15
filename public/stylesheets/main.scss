@@ -1,9 +1,14 @@
+
 @import "_sass-variables";
+@import "_images";
+@import "_layouts";
+
+@import "_normalize";
 
 body {
-  padding: 50px;
+  margin: 0;
   font-family: $font-stack-body;
-  background-color: hotpink;
+  background-color: dodgerblue;
 }
 
 a {
@@ -16,6 +21,7 @@ header {
   padding: 10px;
   text-align: center;
   background-color: yellow;
+  width: 100%;
 }
 
 footer {

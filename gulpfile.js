@@ -1,15 +1,26 @@
 'use strict';
 
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var nodemon = require('gulp-nodemon');
-var sass = require('gulp-sass');
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const nodemon = require('gulp-nodemon');
+const sass = require('gulp-sass');
+const uglifycss = require('gulp-uglifycss');
+const sourcemaps = require('gulp-sourcemaps');
 
 
 gulp.task('default', ['browser-sync'], function () {
 });
 
-gulp.task('browser-sync', ['nodemon', "sass"], function() {
+gulp.task('css', function () {
+	gulp.src('./public/stylesheets/main.css')
+	.pipe(uglifycss({
+		"maxLineLen": 9999,
+		"uglyComments": true
+	}))
+	.pipe(gulp.dest('./public/stylesheets/'));
+});
+
+gulp.task('browser-sync', ['nodemon', "sass"/*, "css"*/], function() {
 	browserSync.init(null, {
 		proxy: "http://localhost:3000",
     files: ["./public/stylesheets/style.css", "./views/*.pug", "./javascript/*.js"],
@@ -17,13 +28,17 @@ gulp.task('browser-sync', ['nodemon', "sass"], function() {
     port: 7000,
 	});
   gulp.watch("./public/stylesheets/*.scss", ['sass']);
+	// gulp.watch("./public/stylesheets/main.css", ['css']);
+
 });
 
 gulp.task('sass', function () {
   return gulp.src('./public/stylesheets/*.scss')
+		.pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+		.pipe(sourcemaps.write())
     .pipe(gulp.dest('./public/stylesheets'))
-    .pipe(browserSync.stream());
+		.pipe(browserSync.stream());
 });
 
 gulp.task('nodemon', function (cb) {
