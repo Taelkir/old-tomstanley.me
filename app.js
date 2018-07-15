@@ -42,4 +42,4 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-// app.listen(port, () => console.log("Running!"));
+app.listen(port, () => console.log(`Running on http://localhost:${port}!`));

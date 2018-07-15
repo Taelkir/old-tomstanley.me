@@ -1,6 +1,7 @@
 {
   "name": "tomstanley.me",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "My website.",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -14,9 +15,10 @@
     "pug": "2.0.3"
   },
   "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-sass": "^3.0.1",
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^4.0.1",
     "node-sass": "^4.9.2"
   }
 }

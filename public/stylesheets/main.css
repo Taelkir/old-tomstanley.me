@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: hotpink; }
+
+a {
+  color: #00B7FF; }
+
+header {
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  letter-spacing: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: yellow; }
+
+footer {
+  background-color: lightgrey;
+  padding: 10px; }
+  footer a {
+    color: darkblue; }
