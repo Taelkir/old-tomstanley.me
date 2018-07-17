@@ -1,3 +1,6 @@
 block header
   header
-    h1= title
+    if !name
+      h1= title
+    else if name
+      h1 #{name} - Web Developer
