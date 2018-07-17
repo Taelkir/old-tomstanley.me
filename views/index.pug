@@ -1,10 +1,13 @@
 extends layout
 
 block content
-  main.flex-container
-    section.intro.flex-container
-      h2 Greetings
-      p.flex-item Welcome, this is my personal portfolio intended to collect things I've created on the internet.
+  main.flex-container-center
+    section.intro
+      .intro-content
+        h2 Greetings
+        p.flex-item Welcome, this is my personal portfolio intended to collect things I've created on the internet.
+        .intro-img
+          img.down-arrow(src="./images/arrow-down.svg")
     section.development.flex-container
       h2 Development
       p.flex-item My web development career is styled on the MEAN Stack.

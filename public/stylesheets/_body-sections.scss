@@ -1,11 +1,10 @@
 @import "_sass-variables";
 
-.flex-container {
+.flex-container-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 0px;
 }
 
 nav {
@@ -21,7 +20,7 @@ nav {
     }
   }
   display: flex;
-  width: 70%;
+  width: 100%;
   justify-content: center;
 }
 
@@ -53,12 +52,23 @@ main {
 }
 
 section {
-  width: 90%;
+  width: 100%;
   text-align: center;
 }
 
-section.intro {
-  background-color: blanchedalmond;
+.intro {
+  background-color: $hero-header-colour;
+  height: 100vh;
+}
+
+.intro-img {
+  margin: 50% auto;
+}
+
+.down-arrow {
+  height: 100px;
+  width: 150px;
+  margin: auto;
 }
 
 .name-prompt form {
