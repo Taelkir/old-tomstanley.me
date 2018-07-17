@@ -9,8 +9,21 @@
 }
 
 section {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 }
 
+li.title {
+  font-weight: 900;
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+}
 body {
   background-color: $body-background-colour;
   display: flex;
