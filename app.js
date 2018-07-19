@@ -9,7 +9,8 @@ var bodyParser = require('body-parser')
 
 var app = express();
 
-const port = 3000 || "";
+const port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 8080;
+var ip = process.env.OPENSHIFT_NODEJS_IP || process.env.IP || '0.0.0.0';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -44,4 +45,4 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-app.listen(port, () => console.log(`Running on http://localhost:${port}!`));
+app.listen(port, () => console.log(`Running on ${ip}:${port}!`));
